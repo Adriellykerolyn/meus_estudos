@@ -1,0 +1,149 @@
+.skills-container {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.skills-header {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+
+.skills-header h2 {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  color: var(--color-text);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.skills-header p {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-section {
+  background-color: var(--color-bg-paper);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-vintage);
+}
+
+.section-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px dashed var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.skills-section h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+/* Hard Skills */
+.hard-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hard-skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.skill-percent {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), #ff7a85);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Soft Skills */
+.soft-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.soft-skill-item {
+  display: flex;
+  gap: 1rem;
+  background-color: #fff;
+  border: 1px dashed var(--color-border);
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.soft-skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0px rgba(45, 40, 36, 0.1);
+}
+
+.soft-skill-icon {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+}
+
+.soft-skill-content h4 {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.soft-skill-content p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+}

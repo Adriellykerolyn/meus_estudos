@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #FDFBF7; /* Off-white/Bege claro */
+  --color-bg-paper: #F6F3EB;
+  --color-text: #2D2824; /* Marrom bem escuro, quase preto */
+  --color-text-light: #5A544D;
+  --color-primary: #D4A373; /* Tom terroso/bege quente */
+  --color-secondary: #FDEBD0; /* Bege amarelado pastel */
+  --color-accent: #FEF0B5; /* Amarelo pastel / Efeito Post-it */
+  --color-border: #2D2824;
+  
+  --shadow-vintage: 4px 4px 0px var(--color-border);
+  --shadow-hover: 6px 6px 0px var(--color-border);
+  
+  --border-radius-sm: 4px;
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  
+  --font-main: 'Outfit', sans-serif;
+  --font-display: 'Caveat', cursive;
+}

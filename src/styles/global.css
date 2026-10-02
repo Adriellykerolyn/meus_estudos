@@ -1,0 +1,39 @@
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: radial-gradient(#d4a37322 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .vintage-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+button {
+  font-family: var(--font-main);
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Opcional: Efeito de seleção de texto vintage */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}

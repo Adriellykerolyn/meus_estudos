@@ -1,0 +1,148 @@
+.projects-container {
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-header h2 {
+  font-size: 3.5rem;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: var(--color-bg-paper);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-vintage);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.project-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.project-short-desc {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+/* Cores específicas para os tipos de projeto */
+.tag-type-Front-end { background-color: #D6EAF8; } /* Azul claro */
+.tag-type-Back-end { background-color: #D5F5E3; } /* Verde claro */
+.tag-type-Dados { background-color: #FCF3CF; } /* Amarelo claro */
+.tag-type-DevOps { background-color: #FADBD8; } /* Vermelho/Rosa claro */
+.tag-type-Nuvem { background-color: #E8DAEF; } /* Roxo claro */
+.tag-type-QA { background-color: #FCF3CF; border-color: #F1C40F; } /* Amarelo destacado */
+.tag-type-Full-stack { background-color: #D1F2EB; border-color: #1ABC9C; } /* Turquesa */
+.tag-type-IA { background-color: #F5EEF8; border-color: #9B59B6; } /* Lilás / Roxo */
+
+.project-details {
+  border-top: 2px dashed var(--color-border);
+  padding: 2rem;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.project-full-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-secondary);
+  border-radius: 20px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px var(--color-border);
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.project-btn:hover {
+  background-color: var(--color-accent);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--color-border);
+}
+
+.project-btn.disabled {
+  background-color: #e0e0e0;
+  color: #888;
+  border-color: #aaa;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}

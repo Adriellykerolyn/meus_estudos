@@ -1,0 +1,48 @@
+.card-container {
+  position: relative;
+  display: block;
+  background-color: var(--color-bg-paper);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: var(--shadow-vintage);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  height: 100%;
+}
+
+.card-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 90px;
+  height: 28px;
+  background-color: rgba(254, 240, 181, 0.85); /* Accent amarelo translúcido */
+  border: 1px solid rgba(45, 40, 36, 0.1);
+  box-shadow: 1px 2px 2px rgba(45, 40, 36, 0.05);
+}
+
+.card-container:hover {
+  transform: translateY(-8px) rotate(1deg);
+  box-shadow: var(--shadow-hover);
+  background-color: #fff;
+}
+
+.card-container:hover .card-tape {
+  transform: translateX(-50%) rotate(-1deg);
+  background-color: rgba(254, 240, 181, 1);
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.card-description {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+}

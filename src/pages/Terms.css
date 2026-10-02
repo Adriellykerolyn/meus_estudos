@@ -1,0 +1,75 @@
+.terms-container {
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.terms-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.terms-header h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.term-card {
+  background-color: #FFFFFF;
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0px var(--color-border); /* Uma sombra levemente menor para não pesar a tela cheia de cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.term-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.5rem;
+}
+
+.term-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.term-status {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  white-space: nowrap;
+}
+
+.status-utilizei { background-color: var(--color-secondary); }
+.status-estudar { background-color: var(--color-accent); }
+.status-dominado { background-color: #06d6a0; color: #fff; }
+
+.term-simple {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.term-technical {
+  font-size: 0.95rem;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 0.8rem;
+  border-left: 3px solid var(--color-primary);
+  font-family: monospace; /* Fonte mais "dura" para a explicação técnica */
+  margin-top: auto; /* Empurra para o fim do card se houver espaço sobrando */
+}
